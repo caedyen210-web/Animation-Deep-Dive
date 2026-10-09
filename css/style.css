@@ -1,91 +1,107 @@
-/* Styles for the History of Animation page */
-
-/* Custom styles for the History of Animation website */
-
+/* Overall page appearance */
 body {
     background-color: rgb(84, 177, 238);
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
+    color: #252238;
 }
 
+/* Main content appearance */
 main {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: rgb(84, 177, 238);
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    text-align: center;
-    color: #333333;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-h2 {
-    color: yellow;
-}
-
-p {
-    text-align: left;
-    font-size: 1rem;
-    margin-bottom: 1.2em;
-}
-
-img {
-    width: 50%;
-    border-radius: 8px;
-    display: block;
-    margin: auto;
-}
-
-.subheader {
+/* Custom page title */
+header h1 {
+    color: #2f0463;
+    font-family: Georgia, "Times New Roman", serif;
     font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+    letter-spacing: 1px;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* Custom section headings */
+h2 {
+    color: #2f0463;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(119, 6, 6, 0.5);
+    padding-bottom: 8px;
 }
 
+/* Subheadings */
+h3 {
+    color: #770606;
+    font-weight: bold;
+}
+
+/* Paragraph readability */
+p {
+    max-width: 900px;
+}
+
+/* Images */
+img {
+    border-radius: 8px;
+}
+
+/* Images inside animation flex layouts */
+.animation-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.animation-info {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Spacing between animation sections */
+section {
+    margin-bottom: 24px;
+}
+
+/* List spacing */
+li {
+    margin-bottom: 10px;
+}
+
+/* Custom box styling, if used */
 .box {
     background-color: rgb(227, 231, 22);
     padding: 20px;
     margin: 10px;
+    border-radius: 8px;
 }
 
-/* Responsive styles for smaller screens */
+/* Responsive layout for phones and smaller screens */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
     }
 
-    main {
-        width: auto;
-        margin: 0 10px;
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    .flex-container {
+    .animation-container {
         flex-direction: column;
+        align-items: center;
     }
 
-    .box {
-        width: 90%;
-        padding: 15px;
-        margin: 8px;
+    .animation-container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
 
-    img {
-        width: 80%;
+    main {
+        margin: 0 10px;
+    }
+
+    header img {
+        max-width: 100%;
+        height: auto;
     }
 }
