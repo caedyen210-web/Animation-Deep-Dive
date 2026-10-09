@@ -1,8 +1,6 @@
 /* Styles for the History of Animation page */
 
-header h1 {
-    text-align: center;
-}
+/* Custom styles for the History of Animation website */
 
 body {
     background-color: rgb(84, 177, 238);
@@ -59,4 +57,35 @@ img {
     background-color: rgb(227, 231, 22);
     padding: 20px;
     margin: 10px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        width: auto;
+        margin: 0 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+        padding: 15px;
+        margin: 8px;
+    }
+
+    img {
+        width: 80%;
+    }
 }
