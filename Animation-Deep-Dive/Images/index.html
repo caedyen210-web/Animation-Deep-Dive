@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>History of Animation</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Page styling */
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Flexbox container for cartoon and creator content */
+        .animation-container {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .animation-container img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .animation-info {
+            flex: 1;
+        }
+
+        /* Make expandable images look clickable */
+        .expandable-image {
+            cursor: zoom-in;
+            transition: transform 0.2s ease;
+        }
+
+        .expandable-image:hover {
+            transform: scale(1.03);
+        }
+
+        /* Full-screen image background */
+        .image-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Display the expanded image without stretching it */
+        .image-modal img {
+            display: block;
+            max-width: 95%;
+            max-height: 95%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            cursor: zoom-out;
+        }
+
+        /* Show the modal when active */
+        .image-modal.active {
+            display: flex;
+        }
+
+        /* Prevent background scrolling while image is open */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        /* Mobile-friendly layout */
+        @media (max-width: 768px) {
+            .animation-container {
+                flex-direction: column;
+            }
+
+            .animation-container img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top of the page -->
+    <header class="container text-center py-4">
+
+        <h1 class="display-4 fw-bold mb-3">
+            History of Animation
+        </h1>
+
+        <img
+            src="https://www.powtoon.com/blog/wp-content/uploads/2023/05/Untitled-630-%C3%97-420-px.png"
+            alt="Colorful promotional graphic for the history of animation"
+            class="img-fluid rounded mb-3 expandable-image"
+        >
+
+        <p class="lead mx-auto">
+            Animation has a rich history that dates back to the early 20th century.
+            It has evolved from simple hand-drawn techniques to complex
+            computer-generated imagery (CGI).
+        </p>
+
+    </header>
+
+    <main class="container my-4 p-4">
+
+        <!-- Early beginnings -->
+        <section>
+            <h2 class="text-primary mb-3">Early Beginnings</h2>
+
+            <p>
+                The history of animation can be traced back to the early 1900s
+                when animators began experimenting with hand-drawn techniques.
+                One of the earliest examples of animation is the short film
+                "Gertie the Dinosaur," created by Winsor McCay in 1914.
+            </p>
+        </section>
+
+        <!-- How animation started -->
+        <section>
+            <h2 class="text-primary mb-3">How Animation Started</h2>
+
+            <p>
+                Before animation became commonly used in television and film,
+                it was mostly used for short-term entertainment.
+            </p>
+        </section>
+
+        <!-- Examples of early animation -->
+        <section>
+            <h2 class="text-danger mb-3">Examples of Early Animation</h2>
+
+            <ul>
+                <li>
+                    Phenakistoscope (Children's toy)
+                    <br>
+                    <img
+                        src="https://tse2.mm.bing.net/th/id/OIP.jncm5pdsu289r33DeqJW1gHaHa?r=0&pid=Api&h=220&P=0"
+                        alt="A round phenakistoscope toy with hand-drawn images"
+                        width="300"
+                        height="300"
+                        class="expandable-image"
+                    >
+                </li>
+
+                <li>
+                    The Enchanted Drawing (Indie Short Film)
+                    <br>
+                    <img
+                        src="https://m.media-amazon.com/images/M/MV5BZDhhYzI4MGItYzY2Zi00YTVkLWI1YTgtM2M2Njk4N2JmNWMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                        alt="Vintage promotional artwork for The Enchanted Drawing"
+                        width="300"
+                        height="300"
+                        class="expandable-image"
+                    >
+                </li>
+
+                <li>
+                    Humorous Phases of Funny Faces (Short Film)
+                    <br>
+                    <img
+                        src="https://tse4.mm.bing.net/th/id/OIP.QfyAWoTsYz7YeHLMTVIbWgHaFd?r=0&pid=Api&h=220&P=0"
+                        alt="Black and white drawings from Humorous Phases of Funny Faces"
+                        width="300"
+                        height="300"
+                        class="expandable-image"
+                    >
+                </li>
+
+                <li>
+                    Fantasmagorie (Short Film)
+                    <br>
+                    <img
+                        src="https://tse2.mm.bing.net/th/id/OIP.GXiFKLXURoDdFio1TBEWdQHaG0?r=0&pid=Api&h=220&P=0"
+                        alt="A classic hand-drawn figure from Fantasmagorie"
+                        width="300"
+                        height="300"
+                        class="expandable-image"
+                    >
+                </li>
+            </ul>
+        </section>
+
+        <!-- Early animation examples with Flexbox -->
+        <section>
+            <h2 class="text-primary mb-3">Examples of Early Animation</h2>
+
+            <div class="animation-container">
+
+                <img
+                    src="https://media.istockphoto.com/id/467583602/vector/vintage-cartoon-character-hungry-crazy-cat-smiling-with-tongue-out.jpg?s=2048x2048&w=is&k=20&c=iwXY6eIM8TB7wmprSNr4onyrgLS9yfT_5eO-ZMUvvYA="
+                    alt="A vintage cartoon cat with an exaggerated grin"
+                    class="expandable-image"
+                >
+
+                <div class="animation-info">
+                    <h3>Classic Cartoons</h3>
+
+                    <p>
+                        After these early moments, animation began to gain traction.
+                        Creators experimented with characters, movement, and storytelling,
+                        helping animation develop into the industry we know today.
+                    </p>
+
+                    <p>
+                        These early cartoons helped demonstrate how animated characters
+                        could entertain audiences and tell stories.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Top five animations and cartoons -->
+        <section>
+            <h2 style="color: rgb(119, 6, 6);">
+                Top Five Animations and Cartoons
+            </h2>
+
+            <p>
+                During this time, some of the best animations and cartoons were
+                created, which helped shape the industry into what it is today.
+            </p>
+
+            <ol>
+                <li>
+                    Tom and Jerry
+                    <br>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxcFgT2TG3TmAYixRwnoCjNCyS5mzAv07pCLH6Lu-dCA&s=10"
+                        alt="Tom and Jerry in a colorful promotional image"
+                        width="200"
+                        height="200"
+                        class="expandable-image"
+                    >
+                </li>
+
+                <li>
+                    The Flintstones
+                    <br>
+                    <img
+                        src="https://cdn.britannica.com/84/251484-050-31D38DC3/The-Flintstones.jpg"
+                        alt="The Flintstones family and friends"
+                        width="200"
+                        height="200"
+                        class="expandable-image"
+                    >
+                </li>
+
+                <li>
+                    Looney Tunes
+                    <br>
+                    <img
+                        src="https://m.media-amazon.com/images/S/pv-target-images/39f8cc8acc30d50c46963dc9c2811afd9d7f3d58f75a9e9848b96e072fbc241d.jpg"
+                        alt="A colorful group of Looney Tunes characters"
+                        width="200"
+                        height="200"
+                        class="expandable-image"
+                    >
+                </li>
+
+                <li>
+                    Mickey Mouse
+                    <br>
+                    <img
+                        src="https://imageio.forbes.com/specials-images/imageserve/65949d98b8526b1a56a5bb9f/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds"
+                        alt="Mickey Mouse smiling in a colorful scene"
+                        width="200"
+                        height="200"
+                        class="expandable-image"
+                    >
+                </li>
+
+                <li>
+                    The Jetsons
+                    <br>
+                    <img
+                        src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/9594885/jetsons.jpg?quality=90&strip=all&crop=12.5%2C0%2C75%2C100&w=2400"
+                        alt="The Jetsons family in a futuristic home"
+                        width="200"
+                        height="200"
+                        class="expandable-image"
+                    >
+                </li>
+            </ol>
+        </section>
+
+    </main>
+
+    <!-- Navigation footer links -->
+    <footer class="container text-center py-4">
+
+        <p class="mb-3">
+            <a href="page2.html" class="btn btn-primary">
+                Read more on Page 2
+            </a>
+        </p>
+
+        <p class="mb-0">
+            <a href="index.html" class="btn btn-outline-primary">
+                Back to Home
+            </a>
+        </p>
+
+    </footer>
+
+    <!-- Full-screen image viewer -->
+    <div
+        class="image-modal"
+        id="imageModal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Expanded image viewer"
+    >
+        <img id="expandedImage" src="" alt="">
+    </div>
+
+    <!-- JavaScript for expanding images -->
+    <script>
+        // Find all expandable images
+        const images = document.querySelectorAll('.expandable-image');
+
+        const modal = document.getElementById('imageModal');
+        const expandedImage = document.getElementById('expandedImage');
+
+        // Open an image when clicked
+        images.forEach(function(image) {
+            image.addEventListener('click', function() {
+                expandedImage.src = image.src;
+                expandedImage.alt = image.alt;
+
+                modal.classList.add('active');
+                document.body.classList.add('modal-open');
+            });
+        });
+
+        // Close the image viewer
+        function closeImageModal() {
+            modal.classList.remove('active');
+            document.body.classList.remove('modal-open');
+
+            expandedImage.src = '';
+            expandedImage.alt = '';
+        }
+
+        // Close when the image or dark background is clicked
+        modal.addEventListener('click', function() {
+            closeImageModal();
+        });
+
+        // Close when Escape is pressed
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && modal.classList.contains('active')) {
+                closeImageModal();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
