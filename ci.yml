@@ -1,0 +1,12 @@
+name: CI Workflow
+
+on: [push] # Or whatever trigger you prefer
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}

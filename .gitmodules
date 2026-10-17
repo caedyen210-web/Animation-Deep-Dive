@@ -1,0 +1,3 @@
+[submodule "your-local-path"]
+	path = your-local-path
+	url = https://github.com/caedyen210-web/Animation-Deep-Dive.git
