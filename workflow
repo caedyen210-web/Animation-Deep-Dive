@@ -1,4 +1,0 @@
--name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GH_TOKEN }}
