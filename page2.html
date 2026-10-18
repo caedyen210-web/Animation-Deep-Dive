@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 
+
 <html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <title>Styles of Animation</title>
+
 
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Your custom stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
 
     <style>
         body {
             background-color: lightblue;
             font-family: Arial, sans-serif;
         }
+
 
         /* Flexbox container */
         .animation-container {
@@ -28,15 +35,18 @@
             margin-bottom: 30px;
         }
 
+
         .animation-container img {
             width: 300px;
             height: 300px;
             object-fit: cover;
         }
 
+
         .animation-info {
             flex: 1;
         }
+
 
         /* Make images clickable */
         .expandable-image {
@@ -44,9 +54,11 @@
             transition: transform 0.2s ease;
         }
 
+
         .expandable-image:hover {
             transform: scale(1.03);
         }
+
 
         /* Full-screen image viewer */
         .image-modal {
@@ -63,9 +75,11 @@
             padding: 20px;
         }
 
+
         .image-modal.active {
             display: flex;
         }
+
 
         .image-modal img {
             max-width: 95%;
@@ -76,15 +90,18 @@
             cursor: zoom-out;
         }
 
+
         body.modal-open {
             overflow: hidden;
         }
+
 
         /* Make the page work better on mobile */
         @media (max-width: 768px) {
             .animation-container {
                 flex-direction: column;
             }
+
 
             .animation-container img {
                 max-width: 100%;
@@ -94,14 +111,18 @@
     </style>
 </head>
 
+
 <body>
+
 
     <!-- Page heading -->
     <header class="container text-center py-4">
 
+
         <h1 style="color: rgb(47, 4, 99);">
             Styles of Animation
         </h1>
+
 
         <img
             src="https://www.cgspectrum.com/hubfs/top-types-of-animation-feat-1.jpg"
@@ -109,15 +130,19 @@
             class="img-fluid expandable-image"
         >
 
+
         <p class="lead mx-auto mb-4">
             Over the years, animation has developed multiple different styles,
             which brings new life to the industry. Some examples of these
             unique styles are shown below.
         </p>
 
+
     </header>
 
+
     <main class="container my-4 p-4">
+
 
         <!-- Best animation styles -->
         <section>
@@ -125,7 +150,9 @@
                 Best Animation Styles
             </h2>
 
+
             <p>Some examples of animation styles are as follows:</p>
+
 
             <ul>
                 <li>Spider-Man: Into the Spider-Verse</li>
@@ -137,6 +164,7 @@
                     class="expandable-image"
                 >
 
+
                 <li>Arcane</li>
                 <img
                     src="https://i.ytimg.com/vi/UFkEfcYKlSk/maxresdefault.jpg"
@@ -146,6 +174,7 @@
                     class="expandable-image"
                 >
 
+
                 <li>Treasure Planet</li>
                 <img
                     src="https://upload.wikimedia.org/wikipedia/en/7/7e/Treasure_Planet_poster.jpg"
@@ -154,6 +183,7 @@
                     height="200"
                     class="expandable-image"
                 >
+
 
                 <li>Cowboy Bebop</li>
                 <img
@@ -166,9 +196,11 @@
             </ul>
         </section>
 
+
         <!-- Hand-drawn animation -->
         <section>
             <div class="animation-container">
+
 
                 <img
                     src="https://www.traditionalanimation.com/wp-content/uploads/2013/12/bear-stills-08.jpg"
@@ -176,20 +208,25 @@
                     class="expandable-image"
                 >
 
+
                 <div class="animation-info">
+
 
                     <h2 style="color: rgb(47, 4, 99);">
                         Hand-Drawn Animation
                     </h2>
+
 
                     <p>
                         Hand-drawn animation is created by drawing each frame
                         individually on paper or digitally.
                     </p>
 
+
                     <h3 style="color: rgb(119, 6, 6);">
                         Top Five Hand-Drawn Projects
                     </h3>
+
 
                     <ol>
                         <li>Spirited Away</li>
@@ -201,6 +238,7 @@
                             class="expandable-image"
                         >
 
+
                         <li>The Lion King</li>
                         <img
                             src="https://i.redd.it/9f28sghf9pkd1.jpeg"
@@ -209,6 +247,7 @@
                             height="200"
                             class="expandable-image"
                         >
+
 
                         <li>Akira</li>
                         <img
@@ -219,6 +258,7 @@
                             class="expandable-image"
                         >
 
+
                         <li>The Iron Giant</li>
                         <img
                             src="https://reactormag.com/wp-content/uploads/2015/09/iron-giant-crying-top-image.jpg"
@@ -227,6 +267,7 @@
                             height="200"
                             class="expandable-image"
                         >
+
 
                         <li>Snow White and the Seven Dwarfs</li>
                         <img
@@ -238,13 +279,16 @@
                         >
                     </ol>
 
+
                 </div>
             </div>
         </section>
 
+
         <!-- CGI animation -->
         <section>
             <div class="animation-container">
+
 
                 <img
                     src="https://beastnews.org/wp-content/uploads/2018/05/CGI-face-900x506.jpg"
@@ -252,9 +296,12 @@
                     class="expandable-image"
                 >
 
+
                 <div class="animation-info">
 
+
                     <h2 style="color: rgb(47, 4, 99);">CGI</h2>
+
 
                     <p>
                         Computer-generated imagery (CGI) animation is created
@@ -262,9 +309,11 @@
                         images and scenes.
                     </p>
 
+
                     <h3 style="color: rgb(119, 6, 6);">
                         Top Five CGI Animations
                     </h3>
+
 
                     <ol>
                         <li>Toy Story</li>
@@ -276,6 +325,7 @@
                             class="expandable-image"
                         >
 
+
                         <li>Puss in Boots: The Last Wish</li>
                         <img
                             src="https://cdn.mos.cms.futurecdn.net/XrXqB8K2uSVBFKCcuj7PuR-1200-80.jpg"
@@ -284,6 +334,7 @@
                             height="200"
                             class="expandable-image"
                         >
+
 
                         <li>Avatar</li>
                         <img
@@ -294,6 +345,7 @@
                             class="expandable-image"
                         >
 
+
                         <li>Planet of the Apes</li>
                         <img
                             src="https://static0.moviewebimages.com/wordpress/wp-content/uploads/photo/Jy6F7CI35Z1mlz7q3R4jsELcEKI8iI.jpg?q=50&fit=crop&w=825&dpr=1.5"
@@ -302,6 +354,7 @@
                             height="200"
                             class="expandable-image"
                         >
+
 
                         <li>Pirates of the Caribbean (Davy Jones)</li>
                         <img
@@ -313,13 +366,16 @@
                         >
                     </ol>
 
+
                 </div>
             </div>
         </section>
 
+
         <!-- Stop motion animation -->
         <section>
             <div class="animation-container">
+
 
                 <img
                     src="https://funtechsummercamps.com/blog/wp-content/uploads/2020/02/stop-motion-animation-course-kids.jpg"
@@ -327,11 +383,14 @@
                     class="expandable-image"
                 >
 
+
                 <div class="animation-info">
+
 
                     <h2 style="color: rgb(47, 4, 99);">
                         Stop Motion (Claymation)
                     </h2>
+
 
                     <p>
                         Stop motion animation is created by physically
@@ -339,9 +398,11 @@
                         illusion of movement.
                     </p>
 
+
                     <h3 style="color: rgb(119, 6, 6);">
                         Top Five Stop Motion Animations
                     </h3>
+
 
                     <ol>
                         <li>Wallace and Gromit</li>
@@ -353,6 +414,7 @@
                             class="expandable-image"
                         >
 
+
                         <li>Fantastic Mr. Fox</li>
                         <img
                             src="https://www.rotoscopers.com/wp-content/uploads/2018/06/fantastic-mr-fox.jpg"
@@ -361,6 +423,7 @@
                             height="200"
                             class="expandable-image"
                         >
+
 
                         <li>The Nightmare Before Christmas</li>
                         <img
@@ -371,6 +434,7 @@
                             class="expandable-image"
                         >
 
+
                         <li>Coraline</li>
                         <img
                             src="https://occ-0-2219-2218.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABcI17VEbpUlwChbKNZ1yf3CTeC-3elG2zOYGaxaa6XidSA4UeyYJ62kX2UVFW3RNF3tShpcY0u27MIcDmkIbI4TFchoIuCO2koiZ.jpg?r=36a"
@@ -379,6 +443,7 @@
                             height="300"
                             class="expandable-image"
                         >
+
 
                         <li>Kubo and the Two Strings</li>
                         <img
@@ -390,13 +455,16 @@
                         >
                     </ol>
 
+
                 </div>
             </div>
         </section>
 
+
         <!-- Anime -->
         <section>
             <div class="animation-container">
+
 
                 <img
                     src="https://weedit.photos/wp-content/themes/yootheme/cache/adobe-animate-animation-software-for-anime-9fc1d08c.png"
@@ -404,9 +472,12 @@
                     class="expandable-image"
                 >
 
+
                 <div class="animation-info">
 
+
                     <h2 style="color: rgb(47, 4, 99);">Anime</h2>
+
 
                     <p>
                         Anime is a style of animation that originated in Japan
@@ -414,9 +485,11 @@
                         themes, and vibrant characters.
                     </p>
 
+
                     <h3 style="color: rgb(119, 6, 6);">
                         Top Five Anime Style Animations
                     </h3>
+
 
                     <ol>
                         <li>Princess Mononoke</li>
@@ -428,6 +501,7 @@
                             class="expandable-image"
                         >
 
+
                         <li>Mob Psycho 100</li>
                         <img
                             src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/10/Reigen-Arataka.jpg"
@@ -436,6 +510,7 @@
                             height="200"
                             class="expandable-image"
                         >
+
 
                         <li>JoJo's Bizarre Adventure</li>
                         <img
@@ -446,6 +521,7 @@
                             class="expandable-image"
                         >
 
+
                         <li>Jujutsu Kaisen</li>
                         <img
                             src="https://i.redd.it/epic-trope-the-big-attack-moment-v0-04ebg2tg3xeh1.jpg?width=640&format=pjpg&auto=webp&s=1809660eb947d60b09cd1e80843b864bf5e14dcd"
@@ -454,6 +530,7 @@
                             height="200"
                             class="expandable-image"
                         >
+
 
                         <li>Demon Slayer</li>
                         <img
@@ -465,14 +542,18 @@
                         >
                     </ol>
 
+
                 </div>
             </div>
         </section>
 
+
     </main>
+
 
     <!-- Navigation footer -->
     <footer class="container text-center py-4">
+
 
         <p class="mb-3">
             <a href="page2.html" class="btn btn-primary">
@@ -480,13 +561,16 @@
             </a>
         </p>
 
+
         <p class="mb-0">
             <a href="index.html" class="btn btn-outline-primary">
                 Back to Home
             </a>
         </p>
 
+
     </footer>
+
 
     <!-- Full-screen image viewer -->
     <div
@@ -499,11 +583,13 @@
         <img id="expandedImage" src="" alt="">
     </div>
 
+
     <!-- JavaScript for clickable images -->
     <script>
         const images = document.querySelectorAll('.expandable-image');
         const modal = document.getElementById('imageModal');
         const expandedImage = document.getElementById('expandedImage');
+
 
         // Open the selected image
         images.forEach(function(image) {
@@ -511,22 +597,27 @@
                 expandedImage.src = image.src;
                 expandedImage.alt = image.alt;
 
+
                 modal.classList.add('active');
                 document.body.classList.add('modal-open');
             });
         });
+
 
         // Close the image viewer
         function closeImageModal() {
             modal.classList.remove('active');
             document.body.classList.remove('modal-open');
 
+
             expandedImage.src = '';
             expandedImage.alt = '';
         }
 
+
         // Close when the overlay or expanded image is clicked
         modal.addEventListener('click', closeImageModal);
+
 
         // Close when Escape is pressed
         document.addEventListener('keydown', function(event) {
@@ -539,6 +630,8 @@
         });
     </script>
 
+
 </body>
+
 
 </html>
