@@ -4,12 +4,12 @@
 <html lang="en">
 
 
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>History of Animation</title>
+    <title>Styles of Animation</title>
 
 
     <!-- Bootstrap CSS CDN -->
@@ -25,20 +25,19 @@
     <!-- Your custom stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-
     <style>
-        /* Page styling */
         body {
             background-color: lightblue;
             font-family: Arial, sans-serif;
         }
 
 
-        /* Flexbox container for cartoon and creator content */
+        /* Flexbox container */
         .animation-container {
             display: flex;
             gap: 30px;
             align-items: flex-start;
+            margin-bottom: 30px;
         }
 
 
@@ -54,7 +53,7 @@
         }
 
 
-        /* Make expandable images look clickable */
+        /* Make images clickable */
         .expandable-image {
             cursor: zoom-in;
             transition: transform 0.2s ease;
@@ -66,7 +65,7 @@
         }
 
 
-        /* Full-screen image background */
+        /* Full-screen image viewer */
         .image-modal {
             display: none;
             position: fixed;
@@ -82,9 +81,12 @@
         }
 
 
-        /* Display the expanded image without stretching it */
+        .image-modal.active {
+            display: flex;
+        }
+
+
         .image-modal img {
-            display: block;
             max-width: 95%;
             max-height: 95%;
             width: auto;
@@ -94,19 +96,12 @@
         }
 
 
-        /* Show the modal when active */
-        .image-modal.active {
-            display: flex;
-        }
-
-
-        /* Prevent background scrolling while image is open */
         body.modal-open {
             overflow: hidden;
         }
 
 
-        /* Mobile-friendly layout */
+        /* Make the page work better on mobile */
         @media (max-width: 768px) {
             .animation-container {
                 flex-direction: column;
@@ -125,26 +120,26 @@
 <body>
 
 
-    <!-- Top of the page -->
+    <!-- Page heading -->
     <header class="container text-center py-4">
 
 
-        <h1 class="display-4 fw-bold mb-3">
-            History of Animation
+        <h1 style="color: rgb(47, 4, 99);">
+            Styles of Animation
         </h1>
 
 
         <img
-            src="https://www.powtoon.com/blog/wp-content/uploads/2023/05/Untitled-630-%C3%97-420-px.png"
-            alt="Colorful promotional graphic for the history of animation"
-            class="img-fluid rounded mb-3 expandable-image"
+            src="https://www.cgspectrum.com/hubfs/top-types-of-animation-feat-1.jpg"
+            alt="Collage of colorful animated characters and scenes in varied art styles."
+            class="img-fluid expandable-image"
         >
 
 
-        <p class="lead mx-auto">
-            Animation has a rich history that dates back to the early 20th century.
-            It has evolved from simple hand-drawn techniques to complex
-            computer-generated imagery (CGI).
+        <p class="lead mx-auto mb-4">
+            Over the years, animation has developed multiple different styles,
+            which brings new life to the industry. Some examples of these
+            unique styles are shown below.
         </p>
 
 
@@ -154,214 +149,414 @@
     <main class="container my-4 p-4">
 
 
-        <!-- Early beginnings -->
+        <!-- Best animation styles -->
         <section>
-            <h2 class="text-primary mb-3">Early Beginnings</h2>
+            <h2 style="color: rgb(119, 6, 6);">
+                Best Animation Styles
+            </h2>
 
 
-            <p>
-                The history of animation can be traced back to the early 1900s
-                when animators began experimenting with hand-drawn techniques.
-                One of the earliest examples of animation is the short film
-                "Gertie the Dinosaur," created by Winsor McCay in 1914.
-            </p>
-        </section>
-
-
-        <!-- How animation started -->
-        <section>
-            <h2 class="text-primary mb-3">How Animation Started</h2>
-
-
-            <p>
-                Before animation became commonly used in television and film,
-                it was mostly used for short-term entertainment.
-            </p>
-        </section>
-
-
-        <!-- Examples of early animation -->
-        <section>
-            <h2 class="text-danger mb-3">Examples of Early Animation</h2>
+            <p>Some examples of animation styles are as follows:</p>
 
 
             <ul>
-                <li>
-                    Phenakistoscope (Children's toy)
-                    <br>
-                    <img
-                        src="https://tse2.mm.bing.net/th/id/OIP.jncm5pdsu289r33DeqJW1gHaHa?r=0&pid=Api&h=220&P=0"
-                        alt="A round phenakistoscope toy with hand-drawn images"
-                        width="300"
-                        height="300"
-                        class="expandable-image"
-                    >
-                </li>
+                <li>Spider-Man: Into the Spider-Verse</li>
+                <img
+                    src="https://cdn.mytheatreland.com/images/show/36967_show_1600x708_hero.jpg"
+                    alt="Spider-Man swings through a stylized city scene."
+                    width="200"
+                    height="200"
+                    class="expandable-image"
+                >
 
 
-                <li>
-                    The Enchanted Drawing (Indie Short Film)
-                    <br>
-                    <img
-                        src="https://m.media-amazon.com/images/M/MV5BZDhhYzI4MGItYzY2Zi00YTVkLWI1YTgtM2M2Njk4N2JmNWMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-                        alt="Vintage promotional artwork for The Enchanted Drawing"
-                        width="300"
-                        height="300"
-                        class="expandable-image"
-                    >
-                </li>
+                <li>Arcane</li>
+                <img
+                    src="https://i.ytimg.com/vi/UFkEfcYKlSk/maxresdefault.jpg"
+                    alt="Dramatic animated scene from Arcane with richly colored characters."
+                    width="200"
+                    height="200"
+                    class="expandable-image"
+                >
 
 
-                <li>
-                    Humorous Phases of Funny Faces (Short Film)
-                    <br>
-                    <img
-                        src="https://tse4.mm.bing.net/th/id/OIP.QfyAWoTsYz7YeHLMTVIbWgHaFd?r=0&pid=Api&h=220&P=0"
-                        alt="Black and white drawings from Humorous Phases of Funny Faces"
-                        width="300"
-                        height="300"
-                        class="expandable-image"
-                    >
-                </li>
+                <li>Treasure Planet</li>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/en/7/7e/Treasure_Planet_poster.jpg"
+                    alt="Treasure Planet poster featuring animated space-adventure characters."
+                    width="200"
+                    height="200"
+                    class="expandable-image"
+                >
 
 
-                <li>
-                    Fantasmagorie (Short Film)
-                    <br>
-                    <img
-                        src="https://tse2.mm.bing.net/th/id/OIP.GXiFKLXURoDdFio1TBEWdQHaG0?r=0&pid=Api&h=220&P=0"
-                        alt="A classic hand-drawn figure from Fantasmagorie"
-                        width="300"
-                        height="300"
-                        class="expandable-image"
-                    >
-                </li>
+                <li>Cowboy Bebop</li>
+                <img
+                    src="https://www.hollywoodreporter.com/wp-content/uploads/2018/11/cowboy_bebop.jpg?w=1296&h=730&crop=1"
+                    alt="Cowboy Bebop promotional image featuring its animated space-western characters."
+                    width="200"
+                    height="200"
+                    class="expandable-image"
+                >
             </ul>
         </section>
 
 
-        <!-- Early animation examples with Flexbox -->
+        <!-- Hand-drawn animation -->
         <section>
-            <h2 class="text-primary mb-3">Examples of Early Animation</h2>
-
-
             <div class="animation-container">
 
 
                 <img
-                    src="https://media.istockphoto.com/id/467583602/vector/vintage-cartoon-character-hungry-crazy-cat-smiling-with-tongue-out.jpg?s=2048x2048&w=is&k=20&c=iwXY6eIM8TB7wmprSNr4onyrgLS9yfT_5eO-ZMUvvYA="
-                    alt="A vintage cartoon cat with an exaggerated grin"
+                    src="https://www.traditionalanimation.com/wp-content/uploads/2013/12/bear-stills-08.jpg"
+                    alt="Hand-drawn bear sketches showing successive animation frames."
                     class="expandable-image"
                 >
 
 
                 <div class="animation-info">
-                    <h3>Classic Cartoons</h3>
+
+
+                    <h2 style="color: rgb(47, 4, 99);">
+                        Hand-Drawn Animation
+                    </h2>
 
 
                     <p>
-                        After these early moments, animation began to gain traction.
-                        Creators experimented with characters, movement, and storytelling,
-                        helping animation develop into the industry we know today.
+                        Hand-drawn animation is created by drawing each frame
+                        individually on paper or digitally.
                     </p>
 
 
-                    <p>
-                        These early cartoons helped demonstrate how animated characters
-                        could entertain audiences and tell stories.
-                    </p>
+                    <h3 style="color: rgb(119, 6, 6);">
+                        Top Five Hand-Drawn Projects
+                    </h3>
+
+
+                    <ol>
+                        <li>Spirited Away</li>
+                        <img
+                            src="https://bowseat.org/wp-content/uploads/2023/07/chihiro045.jpeg"
+                            alt="Spirited Away scene with animated characters in a richly detailed setting."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>The Lion King</li>
+                        <img
+                            src="https://i.redd.it/9f28sghf9pkd1.jpeg"
+                            alt="The Lion King animated scene featuring animal characters."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Akira</li>
+                        <img
+                            src="https://belcourt-production.s3.amazonaws.com/wp-content/uploads/2025/02/18102002/Akira-web.jpg"
+                            alt="Akira promotional artwork with a futuristic science-fiction atmosphere."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>The Iron Giant</li>
+                        <img
+                            src="https://reactormag.com/wp-content/uploads/2015/09/iron-giant-crying-top-image.jpg"
+                            alt="The Iron Giant with a tearful expression."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Snow White and the Seven Dwarfs</li>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_T6TXJCO1J8eIdw7T3JbE3NY9CUs0geVvoe5vC6WrBmHFhB3s0F9q84&s=10"
+                            alt="Snow White and the Seven Dwarfs promotional artwork."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+                    </ol>
+
+
                 </div>
-
-
             </div>
         </section>
 
 
-        <!-- Top five animations and cartoons -->
+        <!-- CGI animation -->
         <section>
-            <h2 style="color: rgb(119, 6, 6);">
-                Top Five Animations and Cartoons
-            </h2>
+            <div class="animation-container">
 
 
-            <p>
-                During this time, some of the best animations and cartoons were
-                created, which helped shape the industry into what it is today.
-            </p>
+                <img
+                    src="https://beastnews.org/wp-content/uploads/2018/05/CGI-face-900x506.jpg"
+                    alt="Realistic computer-generated human face."
+                    class="expandable-image"
+                >
 
 
-            <ol>
-                <li>
-                    Tom and Jerry
-                    <br>
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxcFgT2TG3TmAYixRwnoCjNCyS5mzAv07pCLH6Lu-dCA&s=10"
-                        alt="Tom and Jerry in a colorful promotional image"
-                        width="200"
-                        height="200"
-                        class="expandable-image"
-                    >
-                </li>
+                <div class="animation-info">
 
 
-                <li>
-                    The Flintstones
-                    <br>
-                    <img
-                        src="https://cdn.britannica.com/84/251484-050-31D38DC3/The-Flintstones.jpg"
-                        alt="The Flintstones family and friends"
-                        width="200"
-                        height="200"
-                        class="expandable-image"
-                    >
-                </li>
+                    <h2 style="color: rgb(47, 4, 99);">CGI</h2>
 
 
-                <li>
-                    Looney Tunes
-                    <br>
-                    <img
-                        src="https://m.media-amazon.com/images/S/pv-target-images/39f8cc8acc30d50c46963dc9c2811afd9d7f3d58f75a9e9848b96e072fbc241d.jpg"
-                        alt="A colorful group of Looney Tunes characters"
-                        width="200"
-                        height="200"
-                        class="expandable-image"
-                    >
-                </li>
+                    <p>
+                        Computer-generated imagery (CGI) animation is created
+                        using computer software to create and manipulate digital
+                        images and scenes.
+                    </p>
 
 
-                <li>
-                    Mickey Mouse
-                    <br>
-                    <img
-                        src="https://imageio.forbes.com/specials-images/imageserve/65949d98b8526b1a56a5bb9f/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds"
-                        alt="Mickey Mouse smiling in a colorful scene"
-                        width="200"
-                        height="200"
-                        class="expandable-image"
-                    >
-                </li>
+                    <h3 style="color: rgb(119, 6, 6);">
+                        Top Five CGI Animations
+                    </h3>
 
 
-                <li>
-                    The Jetsons
-                    <br>
-                    <img
-                        src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/9594885/jetsons.jpg?quality=90&strip=all&crop=12.5%2C0%2C75%2C100&w=2400"
-                        alt="The Jetsons family in a futuristic home"
-                        width="200"
-                        height="200"
-                        class="expandable-image"
-                    >
-                </li>
-            </ol>
+                    <ol>
+                        <li>Toy Story</li>
+                        <img
+                            src="https://assets.newsweek.com/wp-content/uploads/2025/08/1672942-toy-story.jpg"
+                            alt="Toy Story animated toy characters."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Puss in Boots: The Last Wish</li>
+                        <img
+                            src="https://cdn.mos.cms.futurecdn.net/XrXqB8K2uSVBFKCcuj7PuR-1200-80.jpg"
+                            alt="Puss in Boots in an animated fantasy-adventure scene."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Avatar</li>
+                        <img
+                            src="https://media.gq.com/photos/627d37fbbad17dc46fce8158/16:9/w_1280,c_limit/MCDAVAT_FE021.jpg"
+                            alt="Avatar characters in a lush alien environment."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Planet of the Apes</li>
+                        <img
+                            src="https://static0.moviewebimages.com/wordpress/wp-content/uploads/photo/Jy6F7CI35Z1mlz7q3R4jsELcEKI8iI.jpg?q=50&fit=crop&w=825&dpr=1.5"
+                            alt="Planet of the Apes character in a dramatic landscape."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Pirates of the Caribbean (Davy Jones)</li>
+                        <img
+                            src="https://static.wixstatic.com/media/86af76_407a2bcbaab649c183c0582aa8cce090~mv2.jpg/v1/fill/w_1000,h_497,al_c,q_85,usm_0.66_1.00_0.01/86af76_407a2bcbaab649c183c0582aa8cce090~mv2.jpg"
+                            alt="Davy Jones in a dark ocean-themed scene."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+                    </ol>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Stop motion animation -->
+        <section>
+            <div class="animation-container">
+
+
+                <img
+                    src="https://funtechsummercamps.com/blog/wp-content/uploads/2020/02/stop-motion-animation-course-kids.jpg"
+                    alt="Stop-motion puppet or model posed on a work surface."
+                    class="expandable-image"
+                >
+
+
+                <div class="animation-info">
+
+
+                    <h2 style="color: rgb(47, 4, 99);">
+                        Stop Motion (Claymation)
+                    </h2>
+
+
+                    <p>
+                        Stop motion animation is created by physically
+                        manipulating objects frame by frame to create the
+                        illusion of movement.
+                    </p>
+
+
+                    <h3 style="color: rgb(119, 6, 6);">
+                        Top Five Stop Motion Animations
+                    </h3>
+
+
+                    <ol>
+                        <li>Wallace and Gromit</li>
+                        <img
+                            src="https://eu-images.contentstack.com/v3/assets/blt8770191dea35bccc/blt905956a6717a084e/64d3e7a30fb9aa053aa6e3af/Wallace_&_Gromit_with_More_Cheese_Ham_and_Chilli_Jam_Pasty_Carrs_Pasties.png"
+                            alt="Wallace and Gromit in a clay-animation scene."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Fantastic Mr. Fox</li>
+                        <img
+                            src="https://www.rotoscopers.com/wp-content/uploads/2018/06/fantastic-mr-fox.jpg"
+                            alt="Fantastic Mr. Fox in a warmly colored stop-motion setting."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>The Nightmare Before Christmas</li>
+                        <img
+                            src="https://blog.displate.com/wp-content/uploads/2025/01/HQ_6468151-1-732x1024.jpg"
+                            alt="The Nightmare Before Christmas gothic animated characters."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Coraline</li>
+                        <img
+                            src="https://occ-0-2219-2218.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABcI17VEbpUlwChbKNZ1yf3CTeC-3elG2zOYGaxaa6XidSA4UeyYJ62kX2UVFW3RNF3tShpcY0u27MIcDmkIbI4TFchoIuCO2koiZ.jpg?r=36a"
+                            alt="Coraline in a shadowy, whimsical setting."
+                            width="300"
+                            height="300"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Kubo and the Two Strings</li>
+                        <img
+                            src="https://occ-0-2794-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO/AAAABSl9EGeHcxtud_j3KFRmL6XDdJk4aWn_t5XRRUPzrISiHRt5eLSMi_srXazR1wi--3xRgsN4uIoOX5BCvLhTHF4UPnUrri3Vvt9G.jpg?r=1d6"
+                            alt="Kubo and the Two Strings in a fantastical stop-motion adventure."
+                            width="300"
+                            height="300"
+                            class="expandable-image"
+                        >
+                    </ol>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Anime -->
+        <section>
+            <div class="animation-container">
+
+
+                <img
+                    src="https://weedit.photos/wp-content/themes/yootheme/cache/adobe-animate-animation-software-for-anime-9fc1d08c.png"
+                    alt="Anime-style illustration introducing Japanese animation."
+                    class="expandable-image"
+                >
+
+
+                <div class="animation-info">
+
+
+                    <h2 style="color: rgb(47, 4, 99);">Anime</h2>
+
+
+                    <p>
+                        Anime is a style of animation that originated in Japan
+                        and is characterized by colorful artwork, fantastical
+                        themes, and vibrant characters.
+                    </p>
+
+
+                    <h3 style="color: rgb(119, 6, 6);">
+                        Top Five Anime Style Animations
+                    </h3>
+
+
+                    <ol>
+                        <li>Princess Mononoke</li>
+                        <img
+                            src="https://images.bauerhosting.com/legacy/empire-tmdb/films/128/images/dB2rATwfCbsPGfRLIoluBnKdVHb.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80"
+                            alt="Princess Mononoke artwork in a forested fantasy setting."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Mob Psycho 100</li>
+                        <img
+                            src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/10/Reigen-Arataka.jpg"
+                            alt="Mob Psycho 100 character Reigen Arataka."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>JoJo's Bizarre Adventure</li>
+                        <img
+                            src="https://i.ytimg.com/vi/2VpyHhYys6M/maxresdefault.jpg"
+                            alt="JoJo's Bizarre Adventure character against a vivid background."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Jujutsu Kaisen</li>
+                        <img
+                            src="https://i.redd.it/epic-trope-the-big-attack-moment-v0-04ebg2tg3xeh1.jpg?width=640&format=pjpg&auto=webp&s=1809660eb947d60b09cd1e80843b864bf5e14dcd"
+                            alt="Jujutsu Kaisen characters in an intense action scene."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+
+
+                        <li>Demon Slayer</li>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMU-ObPqvmUgb1e_NsmYZx6KaE_aMuN5Q-owkRowWJwzZ5gzxTlxMsAFRa&s=10"
+                            alt="Demon Slayer promotional artwork."
+                            width="200"
+                            height="200"
+                            class="expandable-image"
+                        >
+                    </ol>
+
+
+                </div>
+            </div>
         </section>
 
 
     </main>
 
 
-    <!-- Navigation footer links -->
+    <!-- Navigation footer -->
     <footer class="container text-center py-4">
 
 
@@ -394,17 +589,14 @@
     </div>
 
 
-    <!-- JavaScript for expanding images -->
+    <!-- JavaScript for clickable images -->
     <script>
-        // Find all expandable images
         const images = document.querySelectorAll('.expandable-image');
-
-
         const modal = document.getElementById('imageModal');
         const expandedImage = document.getElementById('expandedImage');
 
 
-        // Open an image when clicked
+        // Open the selected image
         images.forEach(function(image) {
             image.addEventListener('click', function() {
                 expandedImage.src = image.src;
@@ -428,15 +620,16 @@
         }
 
 
-        // Close when the image or dark background is clicked
-        modal.addEventListener('click', function() {
-            closeImageModal();
-        });
+        // Close when the overlay or expanded image is clicked
+        modal.addEventListener('click', closeImageModal);
 
 
         // Close when Escape is pressed
         document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape' && modal.classList.contains('active')) {
+            if (
+                event.key === 'Escape' &&
+                modal.classList.contains('active')
+            ) {
                 closeImageModal();
             }
         });
